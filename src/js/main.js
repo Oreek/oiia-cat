@@ -79,6 +79,10 @@ gltfLoader.load('/assets/scene.gltf', (gltfScene) => {
     rotateModel();
     animate();
   });
+}, (progress) => {
+  console.log('Loading progress:', (progress.loaded / progress.total * 100) + '%');
+}, (error) => {
+  console.error('Error loading model:', error);
 });
 
 // Explosion is a man's love!!!

@@ -28,6 +28,8 @@ function initBox1() {
     model.scale.set(5, 5, 5);
     model.position.set(0, -0.5, 0);
     scene.add(model);
+  }, undefined, (error) => {
+    console.error('Error loading model in box1:', error);
   });
 
   function animate() {
@@ -151,6 +153,8 @@ function initBox3() {
     texture.wrapT = THREE.RepeatWrapping;
     material.map = texture;
     material.needsUpdate = true;
+  }, undefined, (error) => {
+    console.error('Error loading texture:', error);
   });
   
   const pyramid = new THREE.Mesh(geometry, material);
