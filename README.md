@@ -1,4 +1,4 @@
-# My Welsite which took longer than expected to make
+# My Website which took longer than expected to make
 
 run it using `npx vite`
 
