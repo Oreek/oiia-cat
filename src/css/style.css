@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+}
+
+main {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    pointer-events: none; /* Ensures it doesn't obstruct interactions with the animation */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.75rem;
+}
+
+#title {
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    position: relative;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 1.5rem;
+    margin-left: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+#explosion {
+    border: 2px solid #ff6347;
+    color: #ff6347;
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    margin-left: 8rem;
+}
+
+#explosion:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+#reset {
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    margin-left: 8rem;
+    font-weight: bold;
+}
+
+#reset:hover {
+    background-color: #00ff00;
+    color: black;
+}
